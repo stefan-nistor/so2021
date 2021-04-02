@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/lab7.dir/peco.c.o CMakeFiles/lab7.dir/mycrew.c.o  -o lab7 
