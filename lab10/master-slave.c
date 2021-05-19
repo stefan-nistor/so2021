@@ -3,10 +3,7 @@
 ///
 
 #include <stdio.h>
-#include <stdlib.h>
-
 #include <unistd.h>
-#include <errno.h>
 
 void masterInit();
 void masterFinish();
@@ -86,7 +83,7 @@ void masterFinish(){
     printf("[Master PID = %d] Sum of input number is: %d\n", getpid(), sp1 + sp2);
 }
 
-void slaveWork(){
+void slaveWork(char *fi, char *fo){
     int nr, code, sp = 0;
     FILE *f1 = fopen("fi", "rt");
 
